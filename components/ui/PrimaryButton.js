@@ -1,5 +1,5 @@
-import { Pressable, Text, View, StyleSheet } from 'react-native'
-import { Colors } from '../constants/colors'
+import { Pressable, Text, View, StyleSheet } from 'react-native';
+import { Colors } from '../../constants/colors';
 
 function PrimaryButton({ children, onPress }) {
   return (
@@ -16,10 +16,10 @@ function PrimaryButton({ children, onPress }) {
         <Text style={styles.buttonText}>{children}</Text>
       </Pressable>
     </View>
-  )
+  );
 }
 
-export default PrimaryButton
+export default PrimaryButton;
 
 const styles = StyleSheet.create({
   buttonOuterContainer: {
@@ -34,10 +34,11 @@ const styles = StyleSheet.create({
     elevation: 2
   },
   buttonText: {
+    fontFamily: 'open-sans',
     color: 'white',
     textAlign: 'center'
   },
   pressed: {
     opacity: 0.75
   }
-})
+});
