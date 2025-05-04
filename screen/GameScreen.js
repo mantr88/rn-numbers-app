@@ -1,4 +1,11 @@
-import { Text, StyleSheet, View, Alert, ScrollView } from 'react-native';
+import {
+  Text,
+  StyleSheet,
+  View,
+  Alert,
+  ScrollView,
+  Dimensions
+} from 'react-native';
 import { useEffect, useState } from 'react';
 import Ionicons from '@expo/vector-icons/Ionicons';
 
@@ -109,7 +116,8 @@ const styles = StyleSheet.create({
   screen: {
     flex: 1,
     padding: 24,
-    marginTop: 100
+    alignItems: 'center',
+    marginTop: '30%'
   },
   instructionText: {
     marginBottom: 12
